@@ -1,0 +1,19 @@
+server:
+  address: 0.0.0.0
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mariadb://localhost:3306/hamkorsale?createDatabaseIfNotExist=true
+    username: hamkor
+    password: hamkor2024sale
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
